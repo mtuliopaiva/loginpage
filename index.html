@@ -4,6 +4,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Login</title>
+        <link rel="icon" type="image/png" href="./img/lock.PNG">
+        <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -11,20 +13,18 @@
             <section class="login">
             <h1 class="login__title">Login</h1>
                 <form class="login__form">
-                <label class="login__userTitle" for="user">Username:</label>
-                <input class="login__userTitle--box" type="text" placeholder="Enter Username" name="user" required>
-
-                <label class="login__passTitle" for="pass">Password:</label>
-                <input class="login__passTitle--box" type="password" placeholder="Enter Password" name="pass" required>
-
-                <input for="check" type="checkbox" class="login__checkbox" checked>
-                <label for="check">Remember me</label>
+                    <input class="login__userTitle--box" type="text" placeholder="Username" name="user" required>
+                    <input class="login__passTitle--box" type="password" placeholder="Password" name="pass" required>
+                <div id="login_checkbox">
+                    <input for="check" type="checkbox" class="login__checkbox" checked>
+                    <label for="check">Remember me</label>
+                </div>
 
                 <input type="submit" value="Login" class="login__button">
                 </form>
-                <p><a href="#">Forgot your password?</a></p>
+                <p><a id="login__link" href="#">Forgot your password?</a></p>
 
-                <p>New Here? <a href="#">Sign Up</a></p>
+                <p>New Here? <a id="login__link" href="#">Sign Up</a></p>
 
             </div>
         </main>
